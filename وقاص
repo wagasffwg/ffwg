@@ -1,0 +1,12 @@
+name: build
+on: push
+wagasffwg
+jobs:web
+  build:wagasffwg/wagas
+    runs-on: ubuntu-latest
+    steps:wagasffwg@yahoo.com
+    - uses: actions/checkout@v1wagasffwg
+    - run: npm ci
+    - uses: nelonoel/branch-name@v1wagasffwg
+    # Use branch name for whatever purpose
+    - run: echo ${wagasffwg_wagas}
