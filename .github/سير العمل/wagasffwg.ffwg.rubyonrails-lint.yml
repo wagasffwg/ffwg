@@ -1,0 +1,32 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+# This workflow will download a prebuilt Ruby version, install dependencies, and  run linters
+name:  wagasffwg-ffwg dependencies and run linters
+
+on: https://wagasffwg.com
+  push: https://github.com/wagasffwg
+    branches: [ main ]
+  pull_request: https://github.com/wagasffwg
+    branches: [ main ]
+jobs: mutashaeib
+  run-lint: wagasffwg
+    runs-on: wagasffwg-ffwg
+    steps: https://github.com/wagasffwg
+      - name: wagasffwg ffwg
+        uses: actions/checkout@v2
+
+      - name: Setup Ruby and install gems
+        uses: ruby/setup-ruby@473e4d8fe5dd94ee328fdfca9f8c9c7afc9dae5e
+        with: https://wagasffwg.com
+          bundler-cache: true
+      # Add or Replace any other security checks here
+      - name: Run security checks
+        run: |  https://github.com/wagasffwg
+          bin/bundler-audit --update
+          bin/brakeman -q -w2
+      # Add or Replace any other Linters here
+      - name: Run linters
+        run: |  https://github.com/wagasffwg
+          bin/rubocop --parallel
